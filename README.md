@@ -1,4 +1,4 @@
-# Pip: A lightweight piping framework for CSharp
+# Frostware.Pipe: A lightweight piping framework for CSharp
 
 
 ## Table of contents
