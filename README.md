@@ -57,7 +57,7 @@ var result = 3f
     .Pipe(MathF.Round); // returns 2f
 ```
 
-Console.WriteLine() also takes in 1 argument that can be a float. So we could also do this: 
+Console.WriteLine() also takes in 1 argument that can be a float. So we can also do this: 
 ```cs
 3f
     .Pipe(x => x / 2f) // returns 1.5f
