@@ -2,9 +2,11 @@
 
 
 ## Table of contents
-* [Why Piping?]("#why-piping?")
+* [Why Piping?](#why-piping)
 * [Introduction](#introduction)
   * [Basics](#basics)
+* [Dependencies](#Dependencies)
+  
 # Introduction
 
 ### Why Piping?
@@ -57,8 +59,11 @@ var result = 3f
 
 Console.WriteLine() also takes in 1 argument that can be a float. So we could also do this: 
 ```cs
-3
-    .Pipe(x => x / 2) // returns 1.5f
+3f
+    .Pipe(x => x / 2f) // returns 1.5f
     .Pipe(MathF.Round); // returns 2f
     .Pipe(Console.WriteLine) //Prints 2 in the console
 ```
+
+# Dependencies
+* [Currify](https://github.com/leandromoh/Curryfy)
