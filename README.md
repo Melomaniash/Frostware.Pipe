@@ -53,7 +53,7 @@ MathF.Round has an overload that takes in 1 float, which means we can do this:
 ```cs
 var result = 3f
     .Pipe(x => x / 2) // returns 1.5f
-    //the pipe will pass 1.5f in to MathF.Round implicitly
+    //the pipe will pass 1.5f into MathF.Round implicitly
     .Pipe(MathF.Round); // returns 2f
 ```
 
