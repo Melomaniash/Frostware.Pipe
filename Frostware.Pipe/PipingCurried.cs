@@ -1,7 +1,7 @@
 ﻿using Curryfy;
 using System;
 
-namespace Pip.Piping
+namespace Frostware.Pipe
 {
     public static partial class Piping
     {
