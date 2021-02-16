@@ -31,9 +31,8 @@ Instead, we could use a pipe:
 ```
 Now, the operations are executed the way they are read and the logic is easier to follow, there is no longer a need to cache values for readability's sake.
 
-# How to use
 
-## Basics
+# Basics
 Pip extends all objects with the Pipe method, whether it be a string, an int or a class. Everything can be pipped.
 
 ```cs
