@@ -16,7 +16,7 @@ Consider this example:
 //prints "2" to the console
 Console.WriteLine(MathF.Round(1.7f));
 ```
-Here we rounding 1.7, then printing the result to the console;
+Here we are rounding 1.7, then printing the result to the console;
 Which is fine, but there are 2 main problems with this.
 
 1. The order of oporations is the opposite of how it is read. 
