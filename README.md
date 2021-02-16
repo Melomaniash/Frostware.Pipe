@@ -82,5 +82,26 @@ Console.WriteLine() also takes in a float, so we can take the result of our roun
     .Pipe(Console.WriteLine); //Prints "2" in the console
 ```
 
+# Multi pipes
+Multi pipes allow you to use a tupple to pipe multiple arguments at the same time.
+
+```cs
+//the tupples are mapped to the arguments in order
+
+var result = (x: 1.75f, digits: 1)
+    //this is equivilent to (MathF.Round(x: 1.15f, digits: 1)
+    .Pipe2(MathF.Round); // returns 2f
+    
+var result = (value: 1.75f, min: 0f, max: 1f)
+    // this is equivalent to Math.Clamp(value: 1.75f, min: 0f, max: 1f)
+    .Pipe3(Math.Clamp); // returns 1f 
+```
+In a bubble, this seems rather pointless but it is usefull when ever you want to create multiple arguments from the same data.
+For example:
+
+```cs
+
+```
+
 # Dependencies
 * [Currify](https://github.com/leandromoh/Curryfy)
