@@ -33,7 +33,7 @@ Now, the operations are executed the way they are read and the logic is easier t
 
 
 # Basics
-Pip extends all objects with the Pipe method, whether it be a string, an int or a class. Everything can be pipped.
+Frostware.Pipe extends all objects with the Pipe method, whether it be a string, an int or a class. Everything can be pipped.
 
 ```cs
 "Hello".Pipe()
