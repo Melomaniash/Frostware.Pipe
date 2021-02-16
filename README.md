@@ -1,21 +1,39 @@
 # Frostware.Pipe: A lightweight piping framework for CSharp
 
-
 ## Table of contents
 * [Why Piping?](#why-piping)
-* [Introduction](#introduction)
-  * [Basics](#basics)
-* [Dependencies](#Dependencies)
-  
-# Introduction
+* [Basics](#basics)
+* [Dependencies](#dependencies)
+ 
+# Why Piping?
 
-### Why Piping?
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
+In computer programming, a pipe is a technique for passing information from one program process to another. A pipe passes a parameter such as the output of one process to another process which accepts it as input. The system temporarily holds the piped information until it is read by the receiving process.
 
-### Basics
+This is usefull cause it alows us to write more readable code that requires less temporary variables.
+
+Consider this example:
+```cs
+//prints "2" to the console
+Console.WriteLine(MathF.Round(1.7f));
+```
+Here we are dividing 3 by 2, rounding it, then printing to the console;
+Which is fine, but there are 2 main problems with this.
+
+1. The order of oporations is the opposite of how it is read. 
+2. Once this gets more complicated, it get's harder to keep track of what is going on. To combat this, it is common to cache intermidiate states in order to maintain readability
+
+Instead, we could use a pipe:
+
+```cs
+1.7f
+   .Pipe(MathF.Round) // returns 2f
+   .Pipe(Console.WriteLine); //Prints "2" in the console
+```
+Now, the operations are executed the way they are read and the logic is easier to follow, there is no longer a need to cache values for readability's sake.
+
+# How to use
+
+## Basics
 Pip extends all objects with the Pipe method, whether it be a string, an int or a class. Everything can be pipped.
 
 ```cs
@@ -57,12 +75,12 @@ var result = 3f
     .Pipe(MathF.Round); // returns 2f
 ```
 
-Console.WriteLine() also takes in 1 argument that can be a float. So we can also do this: 
+Console.WriteLine() also takes in a float, so we can take the result of our rounding and print it to the console. 
 ```cs
 3f
     .Pipe(x => x / 2f) // returns 1.5f
-    .Pipe(MathF.Round); // returns 2f
-    .Pipe(Console.WriteLine) //Prints 2 in the console
+    .Pipe(MathF.Round) // returns 2f
+    .Pipe(Console.WriteLine); //Prints "2" in the console
 ```
 
 # Dependencies
