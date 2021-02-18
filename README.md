@@ -1,4 +1,5 @@
-# Frostware.Pipe: A lightweight piping framework for CSharp
+# Frostware.Pipe
+A lightweight piping framework for C#
 
 ## Table of contents
 * [Why Piping?](#why-piping)
