@@ -5,7 +5,7 @@ namespace Frostware.Pipe
     public static partial class Piping
     {
         /// <summary>
-        /// Performs the given function passing in the input as an argument
+        /// Performs the given function passing in 1 input as an argument
         /// </summary>
         /// <typeparam name="T">Input type</typeparam>
         /// <typeparam name="TResult">Function return type</typeparam>
