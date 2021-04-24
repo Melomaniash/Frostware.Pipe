@@ -1,0 +1,8 @@
+{
+  "name": "com.frostware.pipe",
+  "version": "1.0.0",
+  "displayName": "Frostware.Pipe",
+  "description": "A lightweight piping library for C#",
+  "author": "Cameron Proulx (FrostbiteDragon)",
+  "type": "library"
+}
