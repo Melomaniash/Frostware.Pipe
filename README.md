@@ -97,12 +97,6 @@ var result = (value: 1.75f, min: 0f, max: 1f)
     // this is equivalent to Math.Clamp(value: 1.75f, min: 0f, max: 1f)
     .Pipe3(Math.Clamp); // returns 1f 
 ```
-In a bubble, this seems rather pointless but it is usefull when ever you want to create multiple arguments from the same data.
-For example:
-
-```cs
-
-```
 
 # Dependencies
 * [Currify](https://github.com/leandromoh/Curryfy)
