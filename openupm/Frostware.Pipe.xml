@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Frostware.Pipe</name>
+    </assembly>
+    <members>
+        <member name="M:Frostware.Pipe.Piping.Pipe``2(``0,System.Func{``0,``1})">
+            <summary>
+            Performs the given function passing in 1 input as an argument
+            </summary>
+            <typeparam name="T">Input type</typeparam>
+            <typeparam name="TResult">Function return type</typeparam>
+            <param name="input">Input argument</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The function result</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe2``3(System.ValueTuple{``0,``1},System.Func{``0,``1,``2})">
+            <summary>
+            Performs the given function passing in 2 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="TResult">Function return type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The function result</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe3``4(System.ValueTuple{``0,``1,``2},System.Func{``0,``1,``2,``3})">
+            <summary>
+            Performs the given function passing in 3 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <typeparam name="TResult">Function return type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The function result</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe4``5(System.ValueTuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4})">
+            <summary>
+            Performs the given function passing in 4 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <typeparam name="T4">Fourth input type</typeparam>
+            <typeparam name="TResult">Function return type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The function result</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe5``6(System.ValueTuple{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4,``5})">
+            <summary>
+            Performs the given function passing in 4 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <typeparam name="T4">Fourth input type</typeparam>
+            <typeparam name="T5">Fifth input type</typeparam>
+            <typeparam name="TResult">Function return type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The function result</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe``3(``0,System.Func{``0,``1,``2})">
+            <summary>
+            Takes in a 2 argument function, curries it, then returns a partially applied function with input applied to the first argument
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe``4(``0,System.Func{``0,``1,``2,``3})">
+            <summary>
+            Takes in a 3 argument function, curries it, then returns a partially applied function with input applied to the first argument
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe2``4(System.ValueTuple{``0,``1},System.Func{``0,``1,``2,``3})">
+            <summary>
+            Takes in a 3 argument function, curries it, then returns a partially applied function with the 2 inputs applied
+            to the first 2 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe``5(``0,System.Func{``0,``1,``2,``3,``4})">
+            <summary>
+            Takes in a 4 argument function, curries it, then returns a partially applied function with the input applied
+            to the first argument
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe2``5(System.ValueTuple{``0,``1},System.Func{``0,``1,``2,``3,``4})">
+            <summary>
+            Takes in a 4 argument function, curries it, then returns a partially applied function with the 2 inputs applied
+            to the first 2 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe3``5(System.ValueTuple{``0,``1,``2},System.Func{``0,``1,``2,``3,``4})">
+            <summary>
+            Takes in a 4 argument function, curries it, then returns a partially applied function with the 3 inputs applied
+            to the first 3 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe``6(``0,System.Func{``0,``1,``2,``3,``4,``5})">
+            <summary>
+            Takes in a 5 argument function, curries it, then returns a partially applied function with input applied to the first argument
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe2``6(System.ValueTuple{``0,``1},System.Func{``0,``1,``2,``3,``4,``5})">
+            <summary>
+            Takes in a 5 argument function, curries it, then returns a partially applied function with the 2 inputs applied
+            to the first 2 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe3``6(System.ValueTuple{``0,``1,``2},System.Func{``0,``1,``2,``3,``4,``5})">
+            <summary>
+            Takes in a 5 argument function, curries it, then returns a partially applied function with the 3 inputs applied
+            to the first 3 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe4``6(System.ValueTuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4,``5})">
+            <summary>
+            Takes in a 5 argument function, curries it, then returns a partially applied function with the 4 inputs applied
+            to the first 4 arguments
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <typeparam name="T4"></typeparam>
+            <typeparam name="T5"></typeparam>
+            <typeparam name="TResult"></typeparam>
+            <param name="input"></param>
+            <param name="function"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe``1(``0,System.Action{``0})">
+            <summary>
+            Performs the given function passing in 1 input as an argument
+            </summary>
+            <typeparam name="T">Input type</typeparam>
+            <param name="input">Input argument</param>
+            <param name="func">Function the pipe will perform on the inputs</param>
+            <returns>The input object</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe2``2(System.ValueTuple{``0,``1},System.Action{``0,``1})">
+            <summary>
+            Performs the given function passing in 2 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The input object</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe3``3(System.ValueTuple{``0,``1,``2},System.Action{``0,``1,``2})">
+            <summary>
+            Performs the given function passing in 3 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The input object</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe4``4(System.ValueTuple{``0,``1,``2,``3},System.Action{``0,``1,``2,``3})">
+            <summary>
+            Performs the given function passing in 4 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <typeparam name="T4">Fourth input type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The input object</returns>
+        </member>
+        <member name="M:Frostware.Pipe.Piping.Pipe5``5(System.ValueTuple{``0,``1,``2,``3,``4},System.Action{``0,``1,``2,``3,``4})">
+            <summary>
+            Performs the given function passing in 5 inputs as arguments
+            </summary>
+            <typeparam name="T1">First input type</typeparam>
+            <typeparam name="T2">Second input type</typeparam>
+            <typeparam name="T3">Third input type</typeparam>
+            <typeparam name="T4">Fourth input type</typeparam>
+            <typeparam name="T5">Fifth input type</typeparam>
+            <param name="input">Input arguments</param>
+            <param name="function">Function the pipe will perform on the inputs</param>
+            <returns>The input object</returns>
+        </member>
+    </members>
+</doc>
