@@ -89,12 +89,44 @@ Multi pipes allow you to use a tuple to pipe multiple arguments at the same time
 //the tuples are mapped to the arguments in order
 
 var result = (x: 1.75f, digits: 1)
-    //this is equivalent to (MathF.Round(x: 1.15f, digits: 1)
+    //this is equivalent to MathF.Round(x: 1.15f, digits: 1)
     .Pipe2(MathF.Round); // returns 2f
     
 var result = (value: 1.75f, min: 0f, max: 1f)
     // this is equivalent to Math.Clamp(value: 1.75f, min: 0f, max: 1f)
     .Pipe3(Math.Clamp); // returns 1f 
+```
+
+# CurriedPipes
+Curried functions are also supported
+```cs
+
+Func<float, Func<float, Func<float, float>>> Clamp;
+
+6f
+    .Pipe(Clamp)(0)(5)
+    .Pipe(x => Console.WriteLine($"clamp: {x}")); // prints 5 to the console
+```
+Thanks to currify, none curried functions may also be passed
+```cs
+Func<float, float, float, float> Clamp = Math.Clamp;
+
+6f
+    .Pipe(Clamp)(0)(5)
+    .Pipe(x => Console.WriteLine($"clamp: {x}")); // prints 5 to the console
+```
+In these cases the function will be curried as part of the pipe.
+
+It is important to note that due to implicit casting limitations, methods cannot be passed implicitly.
+you will have to do one of the following:
+```cs
+//explicitly cast
+6f
+    .Pipe((Func<float, float, float, float>)Math.Clamp)(0)(5)
+    .Pipe(x => Console.WriteLine($"clamp: {x}"));
+  
+//convert the method to a function
+Func<float, float, float, float> Clamp = Math.Clamp;
 ```
 
 # Dependencies
