@@ -4,6 +4,8 @@ A lightweight piping library for C#
 ## Table of contents
 * [Why Piping?](#why-piping)
 * [Basics](#basics)
+* [Multi Pipes](#multi-pipes)
+* [Curried Pipes](#curried-pipes)
 * [Dependencies](#dependencies)
  
 # Why Piping?
@@ -97,7 +99,7 @@ var result = (value: 1.75f, min: 0f, max: 1f)
     .Pipe3(Math.Clamp); // returns 1f 
 ```
 
-# CurriedPipes
+# Curried Pipes
 Curried functions are also supported
 ```cs
 
