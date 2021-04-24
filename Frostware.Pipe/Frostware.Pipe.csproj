@@ -4,6 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Cameron Proulx (FrostbiteDragon)</Authors>
+    <Description>A lightweight piping library for C#</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/FrostbiteDragon/Frostware.Pipe</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FrostbiteDragon/Frostware.Pipe</RepositoryUrl>
+    <PackageTags>piping, pipe, functional-programming</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
