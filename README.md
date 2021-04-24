@@ -107,7 +107,7 @@ Func<float, Func<float, Func<float, float>>> Clamp;
     .Pipe(Clamp)(0)(5)
     .Pipe(x => Console.WriteLine($"clamp: {x}")); // prints 5 to the console
 ```
-Thanks to currify, none curried functions may also be passed
+Thanks to Curryfy, none curried functions may also be passed
 ```cs
 Func<float, float, float, float> Clamp = Math.Clamp;
 
