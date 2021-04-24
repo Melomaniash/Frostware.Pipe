@@ -130,4 +130,4 @@ Func<float, float, float, float> Clamp = Math.Clamp;
 ```
 
 # Dependencies
-* [Currify](https://github.com/leandromoh/Curryfy)
+* [Curryfy](https://github.com/leandromoh/Curryfy)
