@@ -1,5 +1,5 @@
 # Frostware.Pipe
-[![nuget](https://img.shields.io/nuget/v/Frostware.Result?style=flat-square)](https://www.nuget.org/packages/Frostware.Result/)
+[![nuget](https://img.shields.io/nuget/v/Frostware.Pipe?style=flat-square)](https://www.nuget.org/packages/Frostware.Result/)
 
 A lightweight piping library for C#
 
